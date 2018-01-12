@@ -7,6 +7,10 @@
 html, body { 
     max-width: 100%;
     overflow-x: hidden; /*Para escoder el scroll horizontal*/
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
 }
 body {
 	background-color: #e9ebee !important;
@@ -17,27 +21,17 @@ textarea {
 header {
 	width: 100%;
 	position: fixed;
-	z-index: 1;
-    height: 62px;
-	background-color:#86b1ef;	
+	z-index: 999;
 	top: 0;
-}
-header nav {
-	position: absolute;
-	top:20px;
-	right:20px;
+    right: 0;
+    left: 0;
+	font-weight: 400;
+    height: 62px;
+	background-color: #3097D1;	
+	display: flex !important;
+	justify-content: space-between;
 }
 
-.logo {
-    color: white;
-	margin-left: 15px;
-    font-size: 2.5em;
-    line-height: 58px;
-    font-family: helvetica;
-}
-.logo span {
-	font-size: 17pt;
-}
 footer {
   width: 100%;
   position: relative;	
@@ -50,7 +44,70 @@ footer {
 }
 a {
 	text-decoration: none !important;
+	background-color: transparent;
 }
+
+.logo {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.logo img{
+	width: 85px;
+}
+.header_boton_opciones {
+	/*float: right;*/
+	margin: 1.5% 3%;
+	color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+
+    padding: 0.75rem 0.75rem 0.25rem;
+    font-size: 2rem;
+    line-height: 1;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 0.25rem;
+
+    align-items: flex-start;
+    text-align: center;
+}
+.header_boton_opciones span {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.header_boton_opciones{
+		display: none;
+	}
+
+}
+#header_menu{
+	max-height: inherit;
+	flex-basis: 100%;
+
+	
+}
+.header_menu_paginas li a{
+	/*color: rgba(255, 255, 255, 0.5);*/
+	color: black;
+}
+.header_menu_paginas_active{
+	color: white !important;
+}
+
+
+
+
 
 #content{
 	position: relative;
