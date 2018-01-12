@@ -13,39 +13,7 @@ mydata = [
     "cant_visualizaciones" : 40,
     "privacidad" : "Público",
     "comentarios" : [
-      {
-        "id" : 1,
-        "id_comentario_principal": -1,
-        "fecha_creacion": "14/08/17 22:16",
-        "nombre_usuario" : "Daniela Pereira",
-        "foto_perfil" : "../static/images/perfil (3).png",
-        "cant_like" : 28,
-        "cant_dislike" : 3,
-        "respuestas" : 5,
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna."
-      },
-      {
-        "id" : 2,
-        "id_comentario_principal": 1,
-        "fecha_creacion": "14/08/17 22:17",
-        "nombre_usuario" : "Daniela Pereira",
-        "foto_perfil" : "../static/images/perfil (4).jpg",
-        "cant_like" : 2,
-        "cant_dislike" : 0,
-        "respuestas" : 5,
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      },
-      {
-        "id" : 3,
-        "id_comentario_principal": 1,
-        "fecha_creacion": "14/08/17 22:16",
-        "nombre_usuario" : "Daniela Pereira",
-        "foto_perfil" : "../static/images/perfil (2).jpg",
-        "cant_like" : 0,
-        "cant_dislike" : 0,
-        "respuestas" : 0,
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna."
-      }
+
     ]
   },
   {
@@ -62,39 +30,7 @@ mydata = [
     "cant_visualizaciones" : 40,
     "privacidad" : "Público",
     "comentarios" : [
-      {
-        "id" : 1,
-        "id_comentario_principal": -1,
-        "fecha_creacion": "14/08/17 22:16",
-        "nombre_usuario" : "Daniela Pereira",
-        "foto_perfil" : "../static/images/perfil (4).jpg",
-        "cant_like" : 28,
-        "cant_dislike" : 3,
-        "respuestas" : 5,
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna."
-      },
-      {
-        "id" : 2,
-        "id_comentario_principal": 1,
-        "fecha_creacion": "14/08/17 22:17",
-        "nombre_usuario" : "Daniela Pereira",
-        "foto_perfil" : "../static/images/perfil (1).jpg",
-        "cant_like" : 2,
-        "cant_dislike" : 0,
-        "respuestas" : 5,
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna."
-      },
-      {
-        "id" : 3,
-        "id_comentario_principal": 1,
-        "fecha_creacion": "14/08/17 22:16",
-        "nombre_usuario" : "Daniela Pereira",
-        "foto_perfil" : "../static/images/perfil (4).jpg",
-        "cant_like" : 0,
-        "cant_dislike" : 0,
-        "respuestas" : 0,
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      }
+
     ]
   },
   {

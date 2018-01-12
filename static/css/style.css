@@ -459,9 +459,43 @@ a {
 
 /************Seccion de Chat************************/
 #chat{
-	background-color: black;
+	background-color: blue;
 	position: fixed;
 	height: 100%;
 	width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** Ad - Libitum *******************/
+
+#header_buscador{
+	width: 50%;
+	float: right;
+}
+
+
+
+/* Barra izquierda*/
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+
+
+
 

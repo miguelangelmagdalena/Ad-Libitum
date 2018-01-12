@@ -1,9 +1,11 @@
 $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 
+	
+	
 	//1. Mostramos la información dinamicamente desde el json
 	var i = 0;			//Valor Inicial
 	var max_value = 4; //Cantidad de elementos maxima en el json 
-	var increment = 2;	//Cantidad de elementos a mostrar hasta llegar al maximo
+	var increment = 4;	//Cantidad de elementos a mostrar hasta llegar al maximo
 	more_elements_callback(i,increment,max_value);
 
 	//Evento de ver más al hacer scroll
@@ -18,7 +20,7 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 			$("#Superbutton").click();	
 		}
 	});
-
+	
 
 });
 
