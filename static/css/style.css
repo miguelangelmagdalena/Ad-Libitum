@@ -152,8 +152,37 @@ a {
 }
 
 
+.art_1{
+	width: 80%;
+	float: left;
+}
+.art_2 {
+	width: 20%;
+	
 
 
+
+	
+	
+}
+.art_2 img {
+	width: 30px;
+}
+.art_2 h2{
+	font-size: 2rem;
+}
+
+.articulo_barra_texto{
+	overflow: hidden;
+}
+.articulo_texto{
+	float: right;
+	width: 70%;
+	text-align: justify;
+}
+.articulo_multimedia{
+	width: 30%;
+}
 
 
 

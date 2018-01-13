@@ -140,6 +140,7 @@ function more_elements_callback(index,increment,max_value){ //Funcion para agreg
 			publicacion +=						"<button class='publicacion_opciones_button'>";
 			publicacion +=							"<img class='publicacion_icon' src='../static/images/icon-comentar.png'>" ;
 			
+			
 			var comentarios_length = mydata[i].comentarios.length;
 			publicacion +=							"<span class='publicacion_opciones_texto comentario_font'>"+comentarios_length+"</span>";
 			publicacion +=						"</button>";
