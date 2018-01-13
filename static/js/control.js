@@ -1,7 +1,8 @@
 $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 
 	
-	
+
+
 	//1. Mostramos la información dinamicamente desde el json
 	var i = 0;			//Valor Inicial
 	var max_value = 4; //Cantidad de elementos maxima en el json 
@@ -21,11 +22,36 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 		}
 	});
 	
+	
+	$("#buscador_principal").focusin(function(){
+		/*$(this).css("width","300px");*/
+		$(this).animate({
+			width: "300px"
+		}, 1000, function() {});
+
+	});
+	$("#buscador_principal").focusout(function(){
+		$(this).animate({
+			width: "200px"
+		}, 500, function() {});
+	});
+	
 
 });
 
 
 /*****************OTRAS FUNCIONES********************************/
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+
 
 
 function hide_button(){ // Elimina el botón de carga de mas publicaciones del DOM
