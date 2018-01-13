@@ -7,7 +7,10 @@
 	<!--
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	-->
+	<link href="../static/vendor/css/font-awesome.min.css" rel="stylesheet">s
 	<link rel="stylesheet" href="../static/vendor/css/bootstrap.min.css" type="text/css">
+	
+
 	<!--
 	<link rel="shortcut icon" href="../static/images/icon.ico" type="image/x-icon" /> 
 	-->
@@ -43,14 +46,19 @@
 		
 		<div id="header_menu">
 			<ul class="header_menu_paginas">
-				<li><a class="header_menu_paginas_active" href="index.html">Algo1</a></li>
-				<li><a href="index.html">Algo2</a></li>
-				<li><a href="index.html">Algo3</a></li>
-				<li><a href="index.html">Algo4</a></li>
+				<li><a class="header_menu_paginas_active" href="index.html">Ultimas Noticias</a></li>
+				<li><a href="index.html">Eventos Musicales</a></li>
+				<li><a href="index.html">Artistas</a></li>
+				<li><a href="index.html">Musica del momento</a></li>
 			</ul>
 
-			<form class="header_buscador">
+			<form class="input-group header_buscador ">
 				<input id="buscador_principal" class="form-control" type="text" data-action="grow" placeholder="Buscar en Ad-Libitum...">
+				<span class="input-group-btn">
+			          <button class="btn btn-default" type="button">
+			            <span class="glyphicon glyphicon-search"></span>
+			          </button>
+			        </span>
 			</form>
 		</div>
 		
@@ -61,7 +69,7 @@
 
 			<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
 				<div class="sidenav">
-			      <h4>John's Blog</h4>
+			      <!--<h4>John's Blog</h4>-->
 			      <ul class="nav nav-pills nav-stacked">
 			      	<li>
 			      		<div id="cp_widget_577e9ce7-6c6b-47c9-8bf1-254f79eadc24">...</div>
@@ -79,6 +87,7 @@
 			        <li><a href="#section3">Family</a></li>
 			        <li><a href="#section3">Photos</a></li>
 			      </ul><br>
+
 			      <div class="input-group">
 			        <input type="text" class="form-control" placeholder="Search Blog..">
 			        <span class="input-group-btn">
@@ -87,6 +96,7 @@
 			          </button>
 			        </span>
 			      </div>
+
 			    </div>
 			</div>
 
@@ -94,77 +104,59 @@
 				
 				<div id= "content">
 					
+					<!--
 					<div class="publicacion shadow border_radius">
 						<div class="publicacion2">
-							<div class="publicacion_barra_nombre">				
+							<div class="articulo_barra_nombre">				
 
 								<div class="art_1 ">
-									<a href="">
+									<a href="#">
 										<h2 class="publicacion_nombre2 titulo">Titulo Articulo Lorem ipsum dolor sit amet, consectetur</h2>
-									</a>					
+									</a>
+									<div class="publicacion_barra_opciones2">
+										<div class="articulo_fecha flotar_izquierda">14/08/17 22:15</div>
+									
+									</div>					
 								</div>
-								<button href='' class='art_2'>
+								<button href='#' class='art_2'>
 									<img src="../static/images/icon-star.png">
-									<h2 class='art_2.2'>8,9/10</h2>
+									<h2 class='art_2.2'>8,9<span>/10</span></h2>
+									<a href="#"><div class="art_2_total">18.808</div></a>
 								</button>
 								
 							</div>
 
 							<div class="articulo_barra_texto">
-								<p class="articulo_texto">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ex ut massa maximus bibendum et et lorem. Donec dignissim posuere est ut tincidunt. Donec neque nisl, malesuada eget aliquam non, euismod ac lacus. Cras finibus augue nisl, ut luctus libero efficitur id. Sed faucibus nibh dolor, scelerisque malesuada risus pellentesque vitae. Phasellus orci odio, pulvinar sit amet arcu convallis, faucibus viverra massa. Proin quis fermentum nisl, eu iaculis purus. Ut tincidunt enim et lectus laoreet fringilla. In purus quam, semper sed porta et, interdum in lacus. Vivamus vitae lacus eget turpis maximus ornare. Aenean mattis accumsan turpis et maximus. Suspendisse pellentesque leo vel nunc auctor rhoncus.
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ex ut massa maximus bibendum et et lorem. Donec dignissim posuere est ut tincidunt. Donec neque nisl, malesuada eget aliquam non, euismod ac lacus. Cras finibus augue nisl, ut luctus libero efficitur id. Sed faucibus nibh dolor, scelerisque malesuada risus pellentesque vitae. Phasellus orci odio, pulvinar sit amet arcu convallis, faucibus viverra massa. Proin quis fermentum nisl, eu iaculis purus. Ut tincidunt enim et lectus laoreet fringilla. In purus quam, semper sed porta et, interdum in lacus. Vivamus vitae lacus eget turpis maximus ornare. Aenean mattis accumsan turpis et maximus. Suspendisse pellentesque leo vel nunc auctor rhoncus.
-
-								</p>
 								<div class="articulo_multimedia">
 									<a href="">
 										<img class="publicacion_multimedia2" src="../static/images/probando (31).jpg">
 									</a>
 								</div>
+								<p class="articulo_texto">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ex ut massa maximus bibendum et et lorem. Donec dignissim posuere est ut tincidunt. Donec neque nisl, malesuada eget aliquam non, euismod ac lacus. Cras finibus augue nisl, ut luctus libero efficitur id. Sed faucibus nibh dolor, scelerisque malesuada risus pellentesque vitae. Phasellus orci odio, pulvinar sit amet arcu convallis, faucibus viverra massa. Proin quis fermentum nisl, eu iaculis purus. Ut tincidunt enim et lectus laoreet fringilla. In purus quam, semper sed porta et, interdum in lacus. Vivamus vitae lacus eget turpis maximus ornare. Aenean mattis accumsan turpis et maximus. Suspendisse pellentesque leo vel nunc auctor rhoncus.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ex ut massa maximus bibendum et et lorem. Donec dignissim posuere est ut tincidunt. Donec neque nisl, malesuada eget aliquam non, euismod ac lacus. Cras finibus augue nisl, ut luctus libero efficitur id. Sed faucibus nibh dolor, scelerisque malesuada risus pellentesque vitae. Phasellus orci odio, pulvinar sit amet arcu convallis, faucibus viverra massa. Proin quis fermentum nisl, eu iaculis purus. Ut tincidunt enim et lectus laoreet fringilla. In purus quam, semper sed porta et, interdum in lacus. Vivamus vitae lacus eget turpis maximus ornare. Aenean mattis accumsan turpis et maximus. Suspendisse pellentesque leo vel nunc auctor rhoncus.
+
+								</p>
+								<div class="articulo_barra_opciones">
+									<ul class="social-network social-circle">
+				                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+				                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+				                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+				                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+				                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+				                    </ul>							
+								</div>								
 							</div>
-
-
-							<div class="publicacion_barra_opciones">
-								<div class="publicacion_opciones flotar_derecha">
-									<button class="publicacion_opciones_button">
-										<img class="publicacion_icon" src="../static/images/icon-comentar.png"> 
-										<span class="publicacion_opciones_texto comentario_font">10</span>
-									</button>
-								</div>												
-								<div class="publicacion_opciones flotar_derecha">
-									<button class="publicacion_opciones_button">
-										<img class="publicacion_icon" src="../static/images/icon-nomegusta.png"> 
-										<span class="publicacion_opciones_texto comentario_font">10 |</span>
-									</button>
-								</div>
-								<div class="publicacion_opciones flotar_derecha">
-									<button class="publicacion_opciones_button">
-										<img class="publicacion_icon" src="../static/images/icon-megusta.png"> 
-										<span class="publicacion_opciones_texto comentario_font">21 |</span>
-									</button>
-								</div>
-								<div class="publicacion_visto flotar_derecha">
-										<img class="publicacion_visto2" src="../static/images/icon-visto.png"> 
-										<span class="publicacion_visto3 comentario_font">100 Visto</span>
-								</div>
-								<div class="publicacion_barra_opciones2">
-									<div class="fecha1 flotar_izquierda">14/08/17 22:15</div>
-									
-								</div>
-							</div>
-
-							
-
 						</div>
 					</div>
-
+					-->
 
 
 					<!-- Aqui se agregará la información dinamicamente -->
 
 					<button id="Superbutton" type="button" title="Ver más" onclick="more_elements_callback(index,increment,max_value)"> Ver más</button>
 					
-
+					
 
 				</div>
 			</div>

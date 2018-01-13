@@ -3,10 +3,11 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 	
 
 
+	
 	//1. Mostramos la información dinamicamente desde el json
 	var i = 0;			//Valor Inicial
 	var max_value = 4; //Cantidad de elementos maxima en el json 
-	var increment = 4;	//Cantidad de elementos a mostrar hasta llegar al maximo
+	var increment = 2;	//Cantidad de elementos a mostrar hasta llegar al maximo
 	more_elements_callback(i,increment,max_value);
 
 	//Evento de ver más al hacer scroll
@@ -108,6 +109,50 @@ function more_elements_callback(index,increment,max_value){ //Funcion para agreg
 			*/
 
 
+
+			var publicacion = 				"<div class='publicacion shadow border_radius'>";
+			publicacion +=						"<div class='publicacion2'>";
+			publicacion +=							"<div class='articulo_barra_nombre'>";		
+			publicacion +=								"<div class='art_1 ''>";
+			publicacion +=									"<a href='#''>";
+			publicacion +=										"<h2 class='publicacion_nombre2 titulo'>"+mydata[i].titulo_articulo+"</h2>";
+			publicacion +=									"</a>";
+			publicacion +=									"<div class='publicacion_barra_opciones2'>";
+			publicacion +=										"<div class='articulo_fecha flotar_izquierda'>"+mydata[i].fecha_creacion+"</div>";										
+			publicacion +=									"</div>	";
+			publicacion +=								"</div>";
+			publicacion +=								"<button href='#' class='art_2'>";
+			publicacion +=									"<img src='../static/images/icon-star.png'>";
+			publicacion +=									"<h2 class='art_2.2'>"+mydata[i].cant_votos+"<span>/10</span></h2>";
+			publicacion +=									"<a href='#'><div class='art_2_total'>"+mydata[i].cant_total+"</div></a>";
+			publicacion +=								"</button>";
+			publicacion +=							"</div>";
+			publicacion +=							"<div class='articulo_barra_texto'>";
+			publicacion +=								"<div class='articulo_multimedia'>";
+			publicacion +=									"<a href=''>";
+			publicacion +=										"<img class='publicacion_multimedia2' src='"+mydata[i].multimedia_url+"'>";
+			publicacion +=									"</a>";
+			publicacion +=								"</div>";
+			publicacion +=								"<p class='articulo_texto'>";
+			publicacion +=									mydata[i].texto;
+			publicacion +=								"</p>";
+			publicacion +=								"<div class='articulo_barra_opciones'>";
+			publicacion +=									"<ul class='social-network social-circle'>";
+			publicacion +=				                        "<li><a href='#' class='icoRss' title='Rss'><i class='fa fa-rss'></i></a></li>";
+			publicacion +=				                        "<li><a href='#' class='icoFacebook' title='Facebook'><i class='fa fa-facebook'></i></a></li>";
+			publicacion +=				                        "<li><a href='#' class='icoTwitter' title='Twitter'><i class='fa fa-twitter'></i></a></li>";
+			publicacion +=				                        "<li><a href='#' class='icoGoogle' title='Google +'><i class='fa fa-google-plus'></i></a></li>";
+			publicacion +=				                        "<li><a href='#' class='icoLinkedin' title='Linkedin'><i class='fa fa-linkedin'></i></a></li>";
+			publicacion +=				                    "</ul>";
+			publicacion +=								"</div>";
+			publicacion +=							"</div>";
+			publicacion +=						"</div>";
+			publicacion +=					"</div>";
+
+
+
+
+/*
 			
 			var publicacion = "	<div class='publicacion shadow border_radius'>";
 			publicacion +=			"<div class='publicacion2'>";
@@ -230,7 +275,7 @@ function more_elements_callback(index,increment,max_value){ //Funcion para agreg
 
 			publicacion +=			"</div>";
 			publicacion +=		"</div>";
-
+*/
 			$(publicacion).appendTo("#content");
 
 

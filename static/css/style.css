@@ -47,6 +47,28 @@ a {
 	background-color: transparent;
 }
 
+
+
+/******************** Ad - Libitum *******************/
+
+#header_buscador{
+	width: 50%;
+	float: right;
+}
+
+
+
+/* Barra izquierda*/
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+
+.input-group .form-control, .input-group-addon, .input-group-btn {
+	display: block !important;
+}
+
 .logo {
     display: inline-block;
     padding-top: 0.3125rem;
@@ -86,12 +108,12 @@ a {
     background-size: 100% 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
 	.header_boton_opciones{
 		display: none;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
 	#header_menu{
 		display: none;
 	}
@@ -146,6 +168,7 @@ a {
 	display: block;
 	float: right;
 	padding: 16px 16px 16px 0px;
+	margin-right: 40px;
 }
 .header_buscador input{
 	width: 200px;
@@ -157,23 +180,29 @@ a {
 	float: left;
 }
 .art_2 {
-	width: 20%;
-	
-
-
-
-	
-	
+	padding: 3px;
+	background-color: #D3D3D3;
+    border-radius: 50%;
 }
 .art_2 img {
 	width: 30px;
+	float: left;
 }
 .art_2 h2{
-	font-size: 2rem;
+	font-size: 1.5rem;
+	float: left;
+	margin: 0;
+}
+.art_2 h2 span{
+	font-size: 1.0rem;
+}
+.art_2 .art_2_total{
+	font-size: 0.9rem;
 }
 
 .articulo_barra_texto{
 	overflow: hidden;
+	margin-bottom: 2%;
 }
 .articulo_texto{
 	float: right;
@@ -181,8 +210,133 @@ a {
 	text-align: justify;
 }
 .articulo_multimedia{
+	float: left;
 	width: 30%;
 }
+
+.articulo_barra_opciones{
+	width: 70%;
+	float: right;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	text-align: right;
+}
+.articulo_fecha{
+	font-size: .8em;
+	text-align: left;
+}
+.articulo_barra_nombre{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 960px) {
+	.articulo_texto, .articulo_multimedia, .articulo_barra_opciones{
+		width: 100%;
+	}
+}
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-network a {
+ background-color: #D3D3D3;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -262,7 +416,6 @@ a {
 	font-size: 18px;
     color: rgb(13, 70, 163);
     font-weight: 600;
-    padding-left: 10px;
 }
 .publicar_menu{
 
@@ -319,6 +472,7 @@ a {
 	margin-top: 2.5%;
 	padding: 6px;
 	background-color: white;
+	overflow: hidden;
 }
 .publicacion2{
 	margin-left: 3%;
@@ -328,6 +482,8 @@ a {
 .publicacion_barra_nombre{
 	height: 80px;
 	margin-top: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
 }
 .publicacion_foto_miniatura{
 	width: 80px;
@@ -375,9 +531,10 @@ a {
 	width: 100%;
 }
 .publicacion_barra_opciones{
-
-	height: 58px;
+	float: right;
+	/*height: 58px;*/
 	margin-top: 1%;
+	margin-bottom: 2%;
 }
 .publicacion_barra_opciones2{
 	/*width: 65%;*/
@@ -575,9 +732,26 @@ a {
 
 
 #Superbutton {
+	margin: 1%;
 	float: center;
 
-	background-color: green; 
+	background-color: #D3D3D3; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    /*width: 50%;*/
+
+   
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#Superbutton:hover, #Superbutton:active {
+    background-color: #337ab7; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -586,25 +760,7 @@ a {
     display: inline-block;
     font-size: 16px;
     border-radius: 50%;
-    width: 50%;
-
-   
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-#Superbutton:hover {
-    background-color: white; 
-    border: none;
-    color: orange;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 50%;
-    width: 50%;
-
-
+   	/*width: 50%;*/
 }
 
 
@@ -624,27 +780,6 @@ a {
 
 
 
-
-
-
-
-
-
-
-/******************** Ad - Libitum *******************/
-
-#header_buscador{
-	width: 50%;
-	float: right;
-}
-
-
-
-/* Barra izquierda*/
-.sidenav {
-  background-color: #f1f1f1;
-  height: 100%;
-}
 
 
 
