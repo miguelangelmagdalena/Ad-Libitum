@@ -34,16 +34,12 @@
 
 <body>
 	<header>
-	
 		<a class="logo" href="index.html">
 			<img src="../static/images/logo.jpg">
 		</a>
-
 		<button class="header_boton_opciones">
 			<span>☰</span>
 		</button>
-
-		
 		<div id="header_menu">
 			<ul class="header_menu_paginas">
 				<li><a class="header_menu_paginas_active" href="index.html">Ultimas Noticias</a></li>
@@ -51,7 +47,6 @@
 				<li><a href="index.html">Artistas</a></li>
 				<li><a href="index.html">Musica del momento</a></li>
 			</ul>
-
 			<form class="input-group header_buscador ">
 				<input id="buscador_principal" class="form-control" type="text" data-action="grow" placeholder="Buscar en Ad-Libitum...">
 				<span class="input-group-btn">
@@ -61,14 +56,13 @@
 			        </span>
 			</form>
 		</div>
-		
 	</header>
 
 	<div class="containter-fluid margin-top">
 		<div class="row">
 
-			<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
-				<div class="sidenav">
+			<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+				<div id="sidenav_barra" class="sidenav shadow border_radius">
 			      <!--<h4>John's Blog</h4>-->
 			      <ul class="nav nav-pills nav-stacked">
 			      	<li>
@@ -82,89 +76,28 @@
 							c.parentNode.insertBefore(cp, c); })();
 						</script>
 			      	</li>
-			        <li class="active"><a href="#section1">Home</a></li>
-			        <li><a href="#section2">Friends</a></li>
-			        <li><a href="#section3">Family</a></li>
-			        <li><a href="#section3">Photos</a></li>
+			        <li class="active"><a href="#">Todas</a></li>
+			        <li><a href="#">Pop</a></li>
+			        <li><a href="#">Reggaetón</a></li>
+			        <li><a href="#">Clásica</a></li>
+			        <li><a href="#">Jazz</a></li>
+			        <li><a href="#">Indie</a></li>
+			        <li><a href="#">Electrónica</a></li>
+			        <li><a href="#">Hip-Hop/Rap</a></li>
+			        <li><a href="#">Folklore Venezolano</a></li>
+			        <li><a href="#">Latin</a></li>
 			      </ul><br>
-
-			      <div class="input-group">
-			        <input type="text" class="form-control" placeholder="Search Blog..">
-			        <span class="input-group-btn">
-			          <button class="btn btn-default" type="button">
-			            <span class="glyphicon glyphicon-search"></span>
-			          </button>
-			        </span>
-			      </div>
-
 			    </div>
 			</div>
 
-			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-				
-				<div id= "content">
-					
-					<!--
-					<div class="publicacion shadow border_radius">
-						<div class="publicacion2">
-							<div class="articulo_barra_nombre">				
-
-								<div class="art_1 ">
-									<a href="#">
-										<h2 class="publicacion_nombre2 titulo">Titulo Articulo Lorem ipsum dolor sit amet, consectetur</h2>
-									</a>
-									<div class="publicacion_barra_opciones2">
-										<div class="articulo_fecha flotar_izquierda">14/08/17 22:15</div>
-									
-									</div>					
-								</div>
-								<button href='#' class='art_2'>
-									<img src="../static/images/icon-star.png">
-									<h2 class='art_2.2'>8,9<span>/10</span></h2>
-									<a href="#"><div class="art_2_total">18.808</div></a>
-								</button>
-								
-							</div>
-
-							<div class="articulo_barra_texto">
-								<div class="articulo_multimedia">
-									<a href="">
-										<img class="publicacion_multimedia2" src="../static/images/probando (31).jpg">
-									</a>
-								</div>
-								<p class="articulo_texto">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ex ut massa maximus bibendum et et lorem. Donec dignissim posuere est ut tincidunt. Donec neque nisl, malesuada eget aliquam non, euismod ac lacus. Cras finibus augue nisl, ut luctus libero efficitur id. Sed faucibus nibh dolor, scelerisque malesuada risus pellentesque vitae. Phasellus orci odio, pulvinar sit amet arcu convallis, faucibus viverra massa. Proin quis fermentum nisl, eu iaculis purus. Ut tincidunt enim et lectus laoreet fringilla. In purus quam, semper sed porta et, interdum in lacus. Vivamus vitae lacus eget turpis maximus ornare. Aenean mattis accumsan turpis et maximus. Suspendisse pellentesque leo vel nunc auctor rhoncus.
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ex ut massa maximus bibendum et et lorem. Donec dignissim posuere est ut tincidunt. Donec neque nisl, malesuada eget aliquam non, euismod ac lacus. Cras finibus augue nisl, ut luctus libero efficitur id. Sed faucibus nibh dolor, scelerisque malesuada risus pellentesque vitae. Phasellus orci odio, pulvinar sit amet arcu convallis, faucibus viverra massa. Proin quis fermentum nisl, eu iaculis purus. Ut tincidunt enim et lectus laoreet fringilla. In purus quam, semper sed porta et, interdum in lacus. Vivamus vitae lacus eget turpis maximus ornare. Aenean mattis accumsan turpis et maximus. Suspendisse pellentesque leo vel nunc auctor rhoncus.
-
-								</p>
-								<div class="articulo_barra_opciones">
-									<ul class="social-network social-circle">
-				                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-				                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-				                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-				                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-				                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-				                    </ul>							
-								</div>								
-							</div>
-						</div>
-					</div>
-					-->
-
-
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">			
+				<div id= "content">					
 					<!-- Aqui se agregará la información dinamicamente -->
-
-					<button id="Superbutton" type="button" title="Ver más" onclick="more_elements_callback(index,increment,max_value)"> Ver más</button>
-					
-					
-
+					<button id="Superbutton" type="button" title="Ver más" onclick="more_elements_callback(index,increment,max_value)"> Ver más</button>									
 				</div>
 			</div>
-
-
 		</div>
-	</div>
-	
+	</div>	
 	
 	<footer >
 	    Copyright © 2018 Esta aplicación ha sido desarrollada por los estudiantes de Aplicaciones de Tecnología Internet del periodo  I-2017. Todos los derechos reservados.

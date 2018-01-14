@@ -59,9 +59,18 @@ a {
 
 
 /* Barra izquierda*/
+#sidenav_barra{
+	position: fixed;
+	width: 22%;
+}
 .sidenav {
-  background-color: #f1f1f1;
-  height: 100%;
+  	background-color: white;
+  	height: 100%;
+ 	position: relative;
+	margin-left: 24.875px;
+
+
+	
 }
 
 
@@ -233,7 +242,7 @@ a {
 	justify-content: space-between;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
 	.articulo_texto, .articulo_multimedia, .articulo_barra_opciones{
 		width: 100%;
 	}
@@ -359,9 +368,8 @@ a.socialIcon:hover, .socialHoverClass {
 
 #content{
 	position: relative;
-	/*margin: 5%;*/
-	margin-left: 3%;
-    margin-right: 3%;
+	/*margin-left: 3%;*/
+    margin-right: 24.875px;
 	text-align:center;
 }
 
@@ -469,7 +477,7 @@ a.socialIcon:hover, .socialHoverClass {
 
 /**************Estructura de las publicaciones ***********/
 .publicacion{
-	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 	padding: 6px;
 	background-color: white;
 	overflow: hidden;
