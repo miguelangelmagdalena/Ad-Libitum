@@ -11,17 +11,20 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 	more_elements_callback(i,increment,max_value);
 
 	//Evento de ver más al hacer scroll
-	$("#content").scroll(function(){
-		var windowHeight = $(this).scrollTop();
-		var windowHeight2 = $(this).height();
-		//var documentHeight = $(document).height();
-		var documentHeight = document.getElementById("content").scrollHeight;
+	$(document.body).on('touchmove', onScroll); // for mobile
+	$(window).on('scroll', onScroll); 
+
+	function onScroll(){ 
+		var windowHeight = $(window).scrollTop();
+		var windowHeight2 = $(window).height();
+		var documentHeight = $(document).height();
+		//var contentTarget = $("#Superbutton").offset().top;
+ 		//console.log(windowHeight + "px / boton: " + contentTarget + "px");
 		//console.log(windowHeight + "px / height: " + windowHeight2 + "px / altura " + documentHeight + "px");
 		if((windowHeight + windowHeight2) >= documentHeight  ){
 			$("#Superbutton").click();	
 		}
-	});
-	
+	};
 	
 	$("#buscador_principal").focusin(function(){
 		/*$(this).css("width","300px");*/

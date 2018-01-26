@@ -11,9 +11,12 @@ html, body {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
+
 }
 body {
 	background-color: #e9ebee !important;
+	overflow-y: hidden;
+	padding-right: 0px !important;
 }
 textarea {
     resize: none;
@@ -662,7 +665,12 @@ a.socialIcon:hover, .socialHoverClass {
 		height: 90px !important;
 	}
 }
-
+@media only screen and (max-width: 991px) {
+	#content{
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+}
 /**************Estructura de los comentarios********************/
 .seccion_comentarios{
 	background-color: #E1F5F3;
