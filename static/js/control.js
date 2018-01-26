@@ -11,12 +11,11 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 	more_elements_callback(i,increment,max_value);
 
 	//Evento de ver más al hacer scroll
-	$(window).scroll(function(){
-		var windowHeight = $(window).scrollTop();
-		var windowHeight2 = $(window).height();
-		var documentHeight = $(document).height();
-		//var contentTarget = $("#Superbutton").offset().top;
- 		//console.log(windowHeight + "px / boton: " + contentTarget + "px");
+	$("#content").scroll(function(){
+		var windowHeight = $(this).scrollTop();
+		var windowHeight2 = $(this).height();
+		//var documentHeight = $(document).height();
+		var documentHeight = document.getElementById("content").scrollHeight;
 		//console.log(windowHeight + "px / height: " + windowHeight2 + "px / altura " + documentHeight + "px");
 		if((windowHeight + windowHeight2) >= documentHeight  ){
 			$("#Superbutton").click();	
@@ -31,12 +30,92 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 		}, 1000, function() {});
 
 	});
+
 	$("#buscador_principal").focusout(function(){
 		$(this).animate({
 			width: "200px"
 		}, 500, function() {});
 	});
 	
+
+	$(document).on('show.bs.modal', '.modal', function (event) {
+        var zIndex = 1040 + (10 * $('.modal:visible').length);
+        $(this).css('z-index', zIndex);
+        setTimeout(function() {
+            $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+        }, 0);
+    });
+
+
+    //Al presionar botones del modal1 de publicar
+    $(".publicar_modal_imagen").click(function(){ //Boton de Imagen
+    	$("#myModal2 .modal-title").html("<i class='fa fa-file-image-o icon-color' aria-hidden='true'></i> Imagen");
+    	$("#myModal2 .col-form-label").html("Enlace de la imagen");
+
+    	var src_image;
+    	//Agregamos el input
+    	$("<input type='text' id='input_imagen' class='form-control'>").insertAfter("#myModal2 .col-form-label");
+    	//Hacemos algo con el input
+    	$("#myModal2 #input_imagen").on("change keyup paste", function(){
+    		src_image = $(this).val()
+    		$("#myModal2 .publicar_multimedia").html("<img class='publicar_multimedia2' src='"+src_image+"'> </img>");
+    	});
+
+    	//Al cerrar el modal
+    	$('#myModal2').on('hidden.bs.modal', function () {
+		  $("#myModal2 #input_imagen").remove(); //Eliminamos el input
+		  $("#myModal2 .publicar_multimedia2").remove();
+		});
+
+		//Al click en adjuntar
+		$("#myModal2 .adjuntar_multimedia").click(function(){
+			$("#myModal .publicar_multimedia").html("<img class='publicar_multimedia2' src='"+src_image+"'> </img>");
+		});
+    });
+
+    $(".publicar_modal_video").click(function(){ //Boton de Video
+    	$("#myModal2 .modal-title").html("<i class='fa fa-file-video-o icon-color' aria-hidden='true'></i> Video");
+    	$("#myModal2 .col-form-label").html("Enlace del video");
+
+    	var youtube_code;
+    	//Agregamos el input
+    	$("<input type='text' id='input_video' class='form-control'>").insertAfter("#myModal2 .col-form-label");
+    	//Hacemos algo con el input
+    	$("#myModal2 #input_video").on("change keyup paste", function(){
+    		youtube_code = getParameterByName("v",$(this).val());
+    		$("#myModal2 .publicar_multimedia").html("<iframe class='publicacion_multimedia2_video' src='https://www.youtube.com/embed/"+youtube_code+"'> </iframe>");
+    	});
+    	//Al cerrar el modal
+    	$('#myModal2').on('hidden.bs.modal', function () {
+		  $("#myModal2 #input_video").remove(); //Eliminamos el input
+		  $("#myModal2 .publicacion_multimedia2_video").remove();
+		});
+		//Al click en adjuntar
+		$("#myModal2 .adjuntar_multimedia").click(function(){
+			$("#myModal .publicar_multimedia").html("<iframe class='publicacion_multimedia2_video' src='https://www.youtube.com/embed/"+youtube_code+"'> </iframe>");
+		});
+    });
+
+    $(".publicar_modal_audio").click(function(){
+    	$("#myModal2 .modal-title").html("<i class='fa fa-file-audio-o icon-color' aria-hidden='true'></i> Audio");
+    	$("#myModal2 .col-form-label").html("Enlace del audio");
+    });
+
+    $(".publicar_modal_link").click(function(){
+    	$("#myModal2 .modal-title").html("<i class='fa fa-external-link icon-color' aria-hidden='true'></i> Enlace");
+    	$("#myModal2 .col-form-label").html("Enlace del enlace");
+    });
+
+
+    $("#publicar .publicar_upload").click(function(){ // Al hacer click en boton de imagen en publicar debe ser un atajo a publicar imagen
+    	$(".publicar_boton").click();
+    	$(".publicar_modal_imagen").click();
+    });
+/*
+    $(".publicar_modal_video").click(function(){
+    	$("#myModal2 #input_video").prop('disabled', false);
+    })
+*/
 
 });
 
