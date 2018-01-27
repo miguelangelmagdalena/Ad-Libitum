@@ -474,7 +474,6 @@ a.socialIcon:hover, .socialHoverClass {
     overflow-y: auto;
 }
 .modal {
-	bottom: inherit !important;
 	padding-right: 0px !important;
 }
 .close {
