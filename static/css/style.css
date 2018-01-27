@@ -53,6 +53,10 @@ p {
 	text-align: justify;
 }
 
+hr {
+	clear: both;
+}
+
 @media only screen and (max-width: 990px) {
 	.hidden-sm{
 		display: none;
@@ -381,7 +385,7 @@ a.socialIcon:hover, .socialHoverClass {
 	float: left;
 }
 .flotar_derecha{
-	float: right;
+	float: right !important;
 }
 
 /*********** Para publicar estados*********/
@@ -682,10 +686,68 @@ a.socialIcon:hover, .socialHoverClass {
 	}
 }
 /**************Estructura de los comentarios********************/
-.seccion_comentarios{
-	background-color: #E1F5F3;
-	margin-bottom: 2%;
-	padding: 3% 3% 0% 3%;
+
+.comentario .thumbnail {
+    display: block;
+    padding: 0px ;
+    border: none ; 
+    border-radius: 0px; 
+
+}
+
+.comentario .thumbnail>img {
+    border-radius: 50%;
+}
+.panel {
+	position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+.panel>.panel-heading:after{
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+.panel>.panel-heading:before{
+	border-right-color:#ddd;
+	border-width:8px;
+}
+
+.comentar2{
+	background-color: white !important;
+} 
+.comentar3{
+	width: 100%;
+	border: none !important;
+}
+
+.panel-footer{
+	display: flex;
+    justify-content: flex-end;
+}
+
+.panel-heading{
+	display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.seccion_comentarios, .comentario, .comentar{
+	clear: both;
 }
 .titulo2{
 	text-align: left;
