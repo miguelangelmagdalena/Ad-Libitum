@@ -1,9 +1,5 @@
 $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 
-	
-
-
-	
 	//1. Mostramos la información dinamicamente desde el json
 	var i = 0;			//Valor Inicial
 	var max_value = 4; //Cantidad de elementos maxima en el json 
@@ -40,7 +36,7 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 		}, 500, function() {});
 	});
 	
-
+	//Para controlar modal anidados - ya que boostrap no lo permite
 	$(document).on('show.bs.modal', '.modal', function (event) {
         var zIndex = 1040 + (10 * $('.modal:visible').length);
         $(this).css('z-index', zIndex);
@@ -50,75 +46,12 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
     });
 
 
-    //Al presionar botones del modal1 de publicar
-    $(".publicar_modal_imagen").click(function(){ //Boton de Imagen
-    	$("#myModal2 .modal-title").html("<i class='fa fa-file-image-o icon-color' aria-hidden='true'></i> Imagen");
-    	$("#myModal2 .col-form-label").html("Enlace de la imagen");
-
-    	var src_image;
-    	//Agregamos el input
-    	$("<input type='text' id='input_imagen' class='form-control'>").insertAfter("#myModal2 .col-form-label");
-    	//Hacemos algo con el input
-    	$("#myModal2 #input_imagen").on("change keyup paste", function(){
-    		src_image = $(this).val()
-    		$("#myModal2 .publicar_multimedia").html("<img class='publicar_multimedia2' src='"+src_image+"'> </img>");
-    	});
-
-    	//Al cerrar el modal
-    	$('#myModal2').on('hidden.bs.modal', function () {
-		  $("#myModal2 #input_imagen").remove(); //Eliminamos el input
-		  $("#myModal2 .publicar_multimedia2").remove();
-		});
-
-		//Al click en adjuntar
-		$("#myModal2 .adjuntar_multimedia").click(function(){
-			$("#myModal .publicar_multimedia").html("<img class='publicar_multimedia2' src='"+src_image+"'> </img>");
-		});
-    });
-
-    $(".publicar_modal_video").click(function(){ //Boton de Video
-    	$("#myModal2 .modal-title").html("<i class='fa fa-file-video-o icon-color' aria-hidden='true'></i> Video");
-    	$("#myModal2 .col-form-label").html("Enlace del video");
-
-    	var youtube_code;
-    	//Agregamos el input
-    	$("<input type='text' id='input_video' class='form-control'>").insertAfter("#myModal2 .col-form-label");
-    	//Hacemos algo con el input
-    	$("#myModal2 #input_video").on("change keyup paste", function(){
-    		youtube_code = getParameterByName("v",$(this).val());
-    		$("#myModal2 .publicar_multimedia").html("<iframe class='publicacion_multimedia2_video' src='https://www.youtube.com/embed/"+youtube_code+"'> </iframe>");
-    	});
-    	//Al cerrar el modal
-    	$('#myModal2').on('hidden.bs.modal', function () {
-		  $("#myModal2 #input_video").remove(); //Eliminamos el input
-		  $("#myModal2 .publicacion_multimedia2_video").remove();
-		});
-		//Al click en adjuntar
-		$("#myModal2 .adjuntar_multimedia").click(function(){
-			$("#myModal .publicar_multimedia").html("<iframe class='publicacion_multimedia2_video' src='https://www.youtube.com/embed/"+youtube_code+"'> </iframe>");
-		});
-    });
-
-    $(".publicar_modal_audio").click(function(){
-    	$("#myModal2 .modal-title").html("<i class='fa fa-file-audio-o icon-color' aria-hidden='true'></i> Audio");
-    	$("#myModal2 .col-form-label").html("Enlace del audio");
-    });
-
-    $(".publicar_modal_link").click(function(){
-    	$("#myModal2 .modal-title").html("<i class='fa fa-external-link icon-color' aria-hidden='true'></i> Enlace");
-    	$("#myModal2 .col-form-label").html("Enlace del enlace");
-    });
+	/*$(".modal-wide").on("show.bs.modal", function() {
+	  var height = $(window).height() - 200;
+	  $(this).find(".modal-body").css("max-height", height);
+	});*/
 
 
-    $("#publicar .publicar_upload").click(function(){ // Al hacer click en boton de imagen en publicar debe ser un atajo a publicar imagen
-    	$(".publicar_boton").click();
-    	$(".publicar_modal_imagen").click();
-    });
-/*
-    $(".publicar_modal_video").click(function(){
-    	$("#myModal2 #input_video").prop('disabled', false);
-    })
-*/
 
 });
 

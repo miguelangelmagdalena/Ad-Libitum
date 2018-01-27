@@ -85,55 +85,108 @@
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">			
 				<div id= "content">	
 				
-					<!-- Button trigger modal -->
-					<div class="publicar_boton" data-toggle="modal" href="#myModal">              
-              ¿Probando modal de boostrap 3.3.7?
-          </div>
+          <div class="publicacion shadow border_radius">
+						<div class="publicacion2">
+							<div class="articulo_barra_nombre">
+								<div class="art_1 ">
+									<a data-toggle="modal" href="#myModal">
+										<h2 class="publicacion_nombre2 titulo">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
+									</a>
+									<div class="publicacion_barra_opciones2">
+										<div class="articulo_fecha flotar_izquierda">14/08/17 22:15</div>
+									</div>	
+								</div>
+								<button href="#" class="art_2">
+									<img src="../static/images/icon-star.png"><h2 class="art_2.2">9<span>/10</span></h2><a href="#">
+									<div class="art_2_total">1257</div></a>
+								</button>
+							</div>
+							<div class="articulo_barra_texto">
+								<div class="articulo_multimedia">
+									<a data-toggle="modal" href="#myModal"><img class="publicacion_multimedia2" src="../static/images/probando (2).jpg"></a>
+								</div>
+								<p class="articulo_texto cursor_pointer" data-toggle="modal" href="#myModal">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. ue nulla, retium mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.
+								</p>
+								<div class="articulo_barra_opciones">
+									<ul class="social-network social-circle">
+										<li><a href="index.html" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+										<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				</div>
 
 
-					<!-- Modal -->
-					          <!-- Modal1 Publicar -->
+					<!--************************************************* Modal ***********************************************-->
+					<!-- Modal1 Publicar -->
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
+
                 <div class="modal-header">
-                  <a href="index.html">
-                    <img class="publicacion_foto_miniatura" src="../static/images/perfil (1).jpg"> 
-                  </a>
-                  <h5 class="publicar_modal modal-title" >Pepe Fernandez</h5>
-                  <div class="publicar_privacidad_select form-group">
-                    <select class="publicar_privacidad_select2 form-control" id="sel1">
-                      <option class="publicar_privacidad_select2">&#xf0ac; Público</option>
-                      <option class="publicar_privacidad_select2">&#xf0c0; Solo Amigos</option>
-                    </select>
-                  </div>                  
+                  <div class="art_1 ">
+										<a>
+											<h2 class="publicacion_nombre2 titulo">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
+										</a>
+										<div class="publicacion_barra_opciones2">
+											<div class="articulo_fecha flotar_izquierda">14/08/17 22:15</div>
+										</div>	
+									</div>
+                	<button href="#" class="art_2">
+										<img src="../static/images/icon-star.png"><h2 class="art_2.2">9<span>/10</span></h2><a href="#">
+										<div class="art_2_total">1257</div></a>
+									</button>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                  </button>                 
+                  </button>
+
+                  <!--
+                  <div class="flotar_izquierda">
+										<ul class="social-network social-circle">
+											<li><a href="index.html" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+											<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+											<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</div>  
+
+									-->
                 </div>
+
                 <div class="modal-body">
-                  <ul class="social-network social-circle">
-                    <li><a class="publicar_modal_imagen icoUpload" title="Subir Imagen" data-toggle="modal" href="#myModal2"><i class="fa fa-file-image-o icon-color" aria-hidden="true"></i></a></li>
-                    <li><a class="publicar_modal_video  icoUpload" title="Subir Video"  data-toggle="modal" href="#myModal2"><i class="fa fa-file-video-o icon-color" aria-hidden="true"></i></a></li>
-                    <li><a class="publicar_modal_audio  icoUpload" title="Subir Audio"  data-toggle="modal" href="#myModal2"><i class="fa fa-file-audio-o icon-color" aria-hidden="true"></i></a></li>
-                    <li><a class="publicar_modal_link   icoUpload" title="Subir Link"   data-toggle="modal" href="#myModal2"><i class="fa fa-external-link icon-color" aria-hidden="true"></i></a></li>
-                  </ul>
-                  <form>
-                    <div class="form-group">
-                      <label for="message-text" class="col-form-label">Mensaje:</label>
-                      <textarea rows="4" class="form-control" id="message_text" placeholder="¿En que estas pensando?"></textarea>
-                    </div>
-                  </form>
+                 	<div class="articulo_multimedia">
+										<a data-toggle="modal" href="#myModal"><img class="publicacion_multimedia2" src="../static/images/probando (2).jpg"></a>
+									</div>
+                 	<p>
+                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. ue nulla, retium mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.
+                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. ue nulla, retium mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.
+                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. ue nulla, retium mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.
+                	
+                	</p>
 
-                  <div class="publicar_multimedia">
-                    
-                  </div>
+                  <div class="articulo_barra_opciones">
+										<ul class="social-network social-circle">
+											<li><a href="index.html" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+											<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+											<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+									</div>
 
                 </div>
+                <!--
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                   <button type="button" class="btn btn-primary">Publicar</button>
                 </div>
+                -->
               </div>
             </div>
           </div>
@@ -164,9 +217,14 @@
             </div>
           </div>
           </div>
-
+          <!--************************************************* Modal ***********************************************-->
           
+
+
 					<!-- Aqui se agregará la información dinamicamente -->
+
+
+
 
 					<button id="Superbutton" type="button" title="Ver más" onclick="more_elements_callback(index,increment,max_value)"> Ver más</button>									
 				</div>

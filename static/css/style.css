@@ -49,7 +49,9 @@ a {
 	text-decoration: none !important;
 	background-color: transparent;
 }
-
+p {
+	text-align: justify;
+}
 
 @media only screen and (max-width: 990px) {
 	.hidden-sm{
@@ -197,13 +199,17 @@ a {
 
 
 .art_1{
-	width: 80%;
-	float: left;
+	display: inline-block;
+    float: none;
+    width: 80%
 }
 .art_2 {
+	vertical-align: middle;
 	padding: 3px;
 	background-color: #D3D3D3;
     border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
 .art_2 img {
 	width: 30px;
@@ -350,34 +356,6 @@ a.socialIcon:hover, .socialHoverClass {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #content{
 	position: relative;
 	/*margin-left: 3%;*/
@@ -488,6 +466,39 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 /**************Estructura de las publicaciones ***********/
+.cursor_pointer{
+	cursor: pointer;
+}
+.modal-body {
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+.modal {
+	bottom: inherit !important;
+	padding-right: 0px !important;
+}
+.close {
+	opacity: 1 !important;
+
+}
+.modal-header .close{
+	margin-top: 7px !important;
+    margin-right: 7px !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media (min-width: 992px) {
+	.modal-lg {
+	    width: 92% !important;
+	}
+}
+@media (min-width: 768px) {
+	.modal-dialog {
+	    width: 92% !important;
+	}
+}
+
 .publicacion{
 	margin-bottom: 2.5%;
 	padding: 6px;
