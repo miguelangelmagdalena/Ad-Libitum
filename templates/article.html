@@ -3,55 +3,13 @@
 <head>
 
     <!-- CSS -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../static/css/article_viewing.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/article_viewing.css" />
     <link rel="stylesheet" href="../static/vendor/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../static/vendor/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../static/images/icon.ico" type="image/x-icon" />
     <link rel="stylesheet"  href ="../static/css/style.css">
 
-    <style type="text/css">
-    	#left_tool_box {
-    		position: absolute;
-    		height: 500px;
-    		width: 30%;
-    		top: 9%;
-    		padding-left: 2%;
-    		padding-top: 1%;
-    		background: white;
-    		border-radius: 10px;
-    		box-shadow: 3px 3px 5px gray;
-		}
-
-		.class_fix {
-			font-size: 200%;
-		}
-
-		.fixed_margin_phagraf {
-			margin-bottom: -10px;
-		}
-
-		#right_box_text {
-			width: 60%;
-			right: 2%;
-			top: 9%;
-			height: 500px;
-			position: absolute;
-			background: white;
-			border-radius: 10px;
-    		box-shadow: 3px 3px 5px gray;
-		}
-
-		.element_centrator {
-			text-align: center;
-			margin: auto;
-		    width: 50%;
-		    border: 3px solid green;
-		    padding: 10px;
-		}
-    </style>
-
     <!-- Scripts -->
-    <script src="main.js"></script>
     <script src="../static/vendor/js/jquery-3.2.1.min.js"></script>
     <script src="../static/vendor/js/bootstrap.min.js"></script>
 
@@ -89,21 +47,33 @@
     </header>
 
     <div class="row" id="main_box">
-	    <div class="col-3" id="left_tool_box">
-		    <p class="class_fix">Herramientas</p>
-		    <div id="tools">
+	    <div id="left_tool_box">
+		    <h2>Herramientas</h2>
+		    <div id="text_recover_buttons">
 		       	<button class="btn btn-warning"><b>Deshacer</b></button>
-		       	<button class="btn btn-info">Rehacer</button>
-			   	<p class="class_fix">Edición</p>
-		    </div>
+				<button class="btn btn-info">Rehacer</button>
+			</div>
+			<div id="tools">
+				<h3>Edición</h3>
+				<button class="simple_button"><i class="fa fa-bold" aria-hidden="true"></i></button>
+				<button class="simple_button"><i class="fa fa-italic" aria-hidden="true"></i></button>
+				<button class="simple_button"><i class="fa fa-underline" aria-hidden="true"></i></button>
+
+			</div>
 		</div>
-		<div class="col-9" id="right_box_text">
-			<p class="element_centrator fixed_margin_phagraf">Titulo</p>
-			<input id="article_title" type="text" name="article_title" placeholder="Título del artículo">
-			<textarea class="element_centrator" id="article_body" placeholder="Escribe tu artículo" ></textarea>
-			<button>Cancelar</button>
-			<button>Guardar</button>
-			<button>Publicar</button>
+		<div id="right_box_text">
+			<div class="element_centrator" id="title_box">
+				<p>Titulo</p>
+				<input class="input_fixer" id="article_title" type="text" name="article_title" placeholder="Título del artículo">
+			</div>
+			<div class="element_centrator" id="body_box">
+				<textarea class="input_fixer" id="article_body" placeholder="Escribe tu artículo" ></textarea>
+				<div id="option_buttons">
+					<button class="btn btn-info">Cancelar</button>
+					<button class="btn btn-warning">Guardar</button>
+					<button class="btn btn-success">Publicar</button>
+				</div>
+			</div>
 		</div>
     </div>
     
