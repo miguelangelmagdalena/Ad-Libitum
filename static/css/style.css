@@ -135,12 +135,12 @@ hr {
     background-size: 100% 100%;
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 620px) {
 	.header_boton_opciones{
 		display: none;
 	}
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 620px) {
 	#header_menu{
 		display: none;
 	}
@@ -166,6 +166,7 @@ hr {
 
 	/*color: rgba(255, 255, 255, 0.5);*/
 	flex-direction: row;
+	justify-content: space-between;
 	margin-right: auto !important;
 	list-style: none;
 	display: flex;
@@ -179,6 +180,13 @@ hr {
 	display: block;
 	font-size: 18px;
 }
+.header_menu_paginas li:last-child { 
+  margin-left: auto;
+}
+/*.header_menu_paginas li:nth-last-child(-n+2) {
+  margin-left: auto;
+}
+*/
 .header_menu_paginas_active{
 	color: white !important;
 }
@@ -200,6 +208,60 @@ hr {
 .header_buscador input{
 	width: 200px;
 }
+
+
+/*Header  Acceder a la pagina*/
+.dropdown-menu{
+	left: auto !important;
+	right: 0;
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+    min-width: 250px;
+}
+#login-dp .social-buttons{
+    margin:12px 0;   
+    display: flex;
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+/*Header  Acceder a la pagina*/
+
+
+
+
 
 
 .art_1{

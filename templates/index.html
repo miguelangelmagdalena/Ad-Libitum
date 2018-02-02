@@ -32,22 +32,85 @@
 		<button class="header_boton_opciones">
 			<span>☰</span>
 		</button>
+
 		<div id="header_menu">
+
 			<ul class="header_menu_paginas">
-				<li><a class="header_menu_paginas_active" href="index.html">Ultimas Noticias</a></li>
-				<li><a href="index.html">Eventos Musicales</a></li>
-				<li><a href="index.html">Artistas</a></li>
-				<li><a href="index.html">Musica del momento</a></li>
+				<li><a class="header_menu_paginas_active" href="index.html">Inicio</a></li>
+				<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Música
+          <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Eventos Musicales</a></li>
+              <li><a href="#">Artistas</a></li>
+              <li><a href="#">Musica del momento</a></li>
+              <li><a href="#">Link 2</a></li>
+          </ul>
+       	</li> 
+				<li><a href="index.html">Contácto</a></li>
+
+				<li>
+					<!-- Buscador en la pagina -->
+					<form class="input-group header_buscador ">
+						<input id="buscador_principal" class="form-control" type="text" data-action="grow" placeholder="Buscar en Ad-Libitum...">
+						<span class="input-group-btn">
+					          <button class="btn btn-default" type="button">
+					            <span class="glyphicon glyphicon-search"></span>
+					          </button>
+					        </span>
+					</form>
+				</li>
+
+
+
+				<!-- Acceder a la pagina -->
+			
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <span class="caret"></span></a>
+						<ul id="login-dp" class="dropdown-menu">
+							<li>
+								 <div class="row">
+										<div class="col-md-12">
+											Ingresa con:
+											<div class="social-buttons">
+												<a href="index.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+												<a href="index.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+											</div>
+			                o tambien con
+											<form class="form" role="form" method="post" action="index.html" accept-charset="UTF-8" id="login-nav">
+												<div class="form-group">
+													<label class="sr-only" for="exampleInputEmail2">Correo</label>
+													<input type="email" class="form-control" id="exampleInputEmail2" placeholder="correo@dominio.com" required>
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+													<input type="password" class="form-control" id="exampleInputPassword2" placeholder="contraseña" required>
+		                      <div class="help-block text-right"><a href="">¿Olvidaste tu contraseña?</a></div>
+												</div>
+												<div class="form-group">
+													<button type="submit" class="btn btn-primary btn-block">Ingresa</button>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox">Recuerdáme</label>
+												</div>
+											</form>
+										</div>
+										<div class="bottom text-center">
+											¿Nuevo en el blog? <a href="index.html">Registrate</a>
+										</div>
+								 </div>
+							</li>
+						</ul>
+        </li>
+
 			</ul>
-			<form class="input-group header_buscador ">
-				<input id="buscador_principal" class="form-control" type="text" data-action="grow" placeholder="Buscar en Ad-Libitum...">
-				<span class="input-group-btn">
-			          <button class="btn btn-default" type="button">
-			            <span class="glyphicon glyphicon-search"></span>
-			          </button>
-			        </span>
-			</form>
+			
+
+			
+		      
 		</div>
+
 	</header>
 
 	<div class="margin-top">
