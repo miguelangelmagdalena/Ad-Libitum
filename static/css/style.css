@@ -209,11 +209,12 @@ hr {
 }
 .art_2 {
 	vertical-align: middle;
-	padding: 3px;
+	/*padding: 3px;*/
 	background-color: #D3D3D3;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 66px;
+    height: 66px;
+    float: right;
 }
 .art_2 img {
 	width: 30px;
@@ -685,6 +686,114 @@ a.socialIcon:hover, .socialHoverClass {
 		margin-left: 5px;
 	}
 }
+
+
+
+/*Para hacer la votacion con estrellas*/
+
+.tooltip_star{
+	position: relative;
+    display: inline-block;
+    border-radius: 0 100px 90px 0;
+
+}
+
+.tooltip_star_content{
+	
+	visibility: hidden;
+    width: 214px;
+    height: 67px;
+    background-color: #D3D3D3;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-width: 2px 0;
+    border-style: outset;
+    border-color: buttonface;
+
+    
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    right: 100%;
+}
+
+.moon_left {
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+.tooltip_star:hover .tooltip_star_content, .tooltip_star_content:hover {
+    visibility: visible;
+}
+.tooltip_star:hover{
+	background-color: #D3D3D3;
+
+	border-width: 2px 0;
+    height: 67px;
+    border-style: outset;
+    border-color: buttonface;
+}
+
+
+/*Votacion con estrellas http://jsfiddle.net/leaverou/CGP87/?utm_source=website&utm_medium=embed&utm_campaign=CGP87*/
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:300%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+
 /**************Estructura de los comentarios********************/
 
 .comentario .thumbnail {
@@ -859,23 +968,6 @@ a.socialIcon:hover, .socialHoverClass {
     border-radius: 50%;
    	/*width: 50%;*/
 }
-
-
-/************Seccion de Chat************************/
-#chat{
-	background-color: blue;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-}
-
-
-
-
-
-
-
-
 
 
 
