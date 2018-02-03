@@ -218,7 +218,7 @@ hr {
 #login-dp{
     min-width: 250px;
     padding: 14px 14px 0;
-    overflow:hidden;
+    /*overflow:hidden;*/
     background-color:rgba(255,255,255,.8);
 }
 #login-dp .help-block{
@@ -636,6 +636,7 @@ a.socialIcon:hover, .socialHoverClass {
 .publicacion_barra_opciones2{
 	/*width: 65%;*/
 	/*height: 100%*/
+	text-align: left;
 }
 .fecha1{
 	width: 15%;
