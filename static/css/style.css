@@ -62,13 +62,8 @@ hr {
 		display: none;
 	}
 }
-/*@media only screen and (min-width: auto) {
-	.hidden-xs{
-		display: none;
-	}
-}*/
-/******************** Ad - Libitum *******************/
 
+/******************** Ad - Libitum *******************/
 #header_buscador{
 	width: 50%;
 	float: right;
@@ -106,7 +101,10 @@ hr {
     white-space: nowrap;
 }
 .logo img{
-	width: 85px;
+	/*width: 85px;*/
+	width: 64px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .header_boton_opciones {
@@ -200,9 +198,9 @@ hr {
     align-items: left;
 }
 .header_buscador{
-	display: block;
+	/*display: block;*/
 	float: right;
-	padding: 16px 16px 16px 0px;
+	padding: 7px 0px 0px 0px;
 	margin-right: 40px;
 }
 .header_buscador input{

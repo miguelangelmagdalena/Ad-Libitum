@@ -10,7 +10,7 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 	$(document.body).on('touchmove', onScroll); // for mobile
 	$(window).on('scroll', onScroll); 
 
-	function onScroll(){ 
+	function onScroll(){ //Al hacer sroll hacia abajo --> cargarmas
 		var windowHeight = $(window).scrollTop();
 		var windowHeight2 = $(window).height();
 		var documentHeight = $(document).height();
@@ -22,15 +22,15 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 		}
 	};
 	
-	$("#buscador_principal").focusin(function(){
-		/*$(this).css("width","300px");*/
+
+	/*Animacion en el buscador de la pagina*/
+	$(".buscador_principal").focusin(function(){ 
 		$(this).animate({
 			width: "300px"
 		}, 1000, function() {});
 
 	});
-
-	$("#buscador_principal").focusout(function(){
+	$(".buscador_principal").focusout(function(){
 		$(this).animate({
 			width: "200px"
 		}, 500, function() {});
@@ -46,11 +46,17 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
     });
 
 
-	/*$(".modal-wide").on("show.bs.modal", function() {
-	  var height = $(window).height() - 200;
-	  $(this).find(".modal-body").css("max-height", height);
-	});*/
-
+	//Para activar el header
+	$('a[href="#navbar-more-show"], .navbar-more-overlay').on('click', function(event) {
+		event.preventDefault();
+		$('body').toggleClass('navbar-more-show');
+		if ($('body').hasClass('navbar-more-show'))	{
+			$('a[href="#navbar-more-show"]').closest('li').addClass('active');
+		}else{
+			$('a[href="#navbar-more-show"]').closest('li').removeClass('active');
+		}
+		return false;
+	});
 
 
 });
