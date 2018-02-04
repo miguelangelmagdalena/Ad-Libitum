@@ -30,127 +30,36 @@
 
 
 
-
-
-
-	<div class="navbar-more-overlay"></div>
-	<nav class="navbar navbar-inverse navbar-fixed-top animate">
-		<div class="container navbar-more visible-xs">
-			<!-- Buscador en pantallas pequeñas -->
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<div class="input-group">
-						<input class="buscador_principal form-control" type="text" placeholder="Buscar en Ad-Libitum...">
-						<span class="input-group-btn">
-		          <button class="btn btn-default" type="button">
-		            <span class="glyphicon glyphicon-search"></span>
-		          </button>
-		        </span>
-					</div>
-				</div>
-			</form>
-
-
-
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-picture-o"></span>
-						Photos
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-bell-o"></span>
-						Reservations
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="container">
-			<div class="navbar-header hidden-xs">
-				<a class="logo" href="index2.html">
+  <header>
+		<a class="logo" href="index.html">
 			<img src="../static/images/logo.jpg">
 		</a>
-			</div>
+		<button class="header_boton_opciones">
+			<span>☰</span>
+		</button>
 
-			<ul class="nav navbar-nav navbar-right mobile-bar">
-				<li class="hidden-xs">
+		<div id="header_menu">
+
+			<ul class="header_menu_paginas ">
+
+				<li><a class="header_menu_paginas_active" href="index.html">Inicio</a></li>
+				<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Música
+          <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Eventos Musicales</a></li>
+              <li><a href="#">Artistas</a></li>
+              <li><a href="#">Musica del momento</a></li>
+              <li><a href="#">Link 2</a></li>
+          </ul>
+       	</li> 
+				<li><a href="index.html">Contácto</a></li>
+
+				<li>
 					<!-- Buscador en la pagina -->
 					<form class="input-group header_buscador ">
-						<input class="buscador_principal form-control" type="text" data-action="grow" placeholder="Buscar en Ad-Libitum...">
+						<input id="buscador_principal" class="form-control" type="text" data-action="grow" placeholder="Buscar en Ad-Libitum...">
 						<span class="input-group-btn">
 		          <button class="btn btn-default" type="button">
 		            <span class="glyphicon glyphicon-search"></span>
@@ -158,91 +67,53 @@
 		        </span>
 					</form>
 				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-home"></span>
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-info"></span>
-						<span class="hidden-xs">About the Boat</span>
-						<span class="visible-xs">About</span>
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						<span class="menu-icon fa fa-phone"></span>				
-						<span class="hidden-xs">Contact Us</span>
-						<span class="visible-xs">Contact</span>
-					</a>
-				</li>
 
 
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="menu-icon fa fa-user"></span>
-						<span class="hidden-xs">Ingresa <span class="caret"></span></span>
-						<span class="visible-xs">Ingresa</span>
-					</a>
-
-					<ul id="login-dp" class="dropdown-menu">
-						<li>
-							 <div class="row">
-									<div class="col-md-12">
-										Ingresar vía
-										<div class="social-buttons">
-											<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-											<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-										</div>
-		                o
-										 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+				<!-- Acceder a la pagina -->
+        <li class="btn-group dropdown ">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingresa <span class="caret"></span></a>
+						<ul id="login-dp" class="dropdown-menu">
+							<li>
+								 <div class="row">
+										<div class="col-md-12">
+											Ingresa con:
+											<div class="social-buttons">
+												<a href="index.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+												<a href="index.html" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+											</div>
+			                o tambien con
+											<form class="form" role="form" method="post" action="index.html" accept-charset="UTF-8" id="login-nav">
 												<div class="form-group">
-													 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-													 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correo electrónico" required>
+													<label class="sr-only" for="exampleInputEmail2">Correo</label>
+													<input type="email" class="form-control" id="exampleInputEmail2" placeholder="correo@dominio.com" required>
 												</div>
 												<div class="form-group">
-													 <label class="sr-only" for="exampleInputPassword2">Password</label>
-													 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
-		                                             <div class="help-block text-right"><a href="">¿Olvidaste tu contraseña?</a></div>
+													<label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+													<input type="password" class="form-control" id="exampleInputPassword2" placeholder="contraseña" required>
+		                      <div class="help-block text-right"><a href="">¿Olvidaste tu contraseña?</a></div>
 												</div>
 												<div class="form-group">
-													 <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+													<button type="submit" class="btn btn-primary btn-block">Ingresa</button>
 												</div>
 												<div class="checkbox">
-													 <label>
-													 <input type="checkbox"> mantener sesión iniciada
-													 </label>
+													<label> <input type="checkbox">Recuerdáme</label>
 												</div>
-										 </form>
-									</div>
-									<div class="bottom text-center">
-										¿Eres nuevo aquí? <a href="./singup.html"><b>Registrarse</b></a>
-									</div>
-							 </div>
-						</li>
-					</ul>
+											</form>
+										</div>
+										<div class="bottom text-center">
+											¿Nuevo en el blog? <a href="index.html">Registrate</a>
+										</div>
+								 </div>
+							</li>
+						</ul>
+        </li>
 
-				</li>
-
-
-
-
-				<li class="visible-xs black_color">
-					<a href="#navbar-more-show">
-						<span class="menu-icon fa fa-bars"></span>
-						Más
-					</a>
-				</li>
 			</ul>
 		</div>
-	</nav>
+	</header>
 
 
-	
 
 	<div class="margin-top">
 		<div class="row">
