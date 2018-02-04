@@ -61,6 +61,12 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 		return false;
 	});
 
+	//Para redirigir cuando ingresa
+	$('#login-nav').submit(function (){
+		var url = "login.html";
+		window.location.replace("login.html");
+ 		return false;
+	});
 
 
 });
