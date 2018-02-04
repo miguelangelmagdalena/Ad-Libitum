@@ -136,50 +136,28 @@
 
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="menu-icon fa fa-user"></span>
-						<span class="hidden-xs">Ingresa <span class="caret"></span></span>
-						<span class="visible-xs">Ingresa</span>
+						<span class="menu-icon glyphicon glyphicon-user"></span>
+						<span class="hidden-xs">Nombre <span class="glyphicon glyphicon-user"></span><span class="caret"></span></span>
+						<span class="visible-xs">Nombre</span>
 					</a>
 
 					<ul id="login-dp" class="dropdown-menu">
 						<li>
 							 <div class="row">
 									<div class="col-md-12">
-
-										Ingresar vía
-
-										<div class="social-buttons">
-											<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-											<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+										<div class="user-titulo">
+											Bienvenido, <br><span class="glyphicon glyphicon-user"></span> Nombre Apellido
 										</div>
-
-		                o con
-										 <form class="form" role="form" method="post" action="login.html" accept-charset="UTF-8" id="login-nav">
-												<div class="form-group">
-													 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-													 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correo electrónico" required>
-												</div>
-												<div class="form-group">
-													 <label class="sr-only" for="exampleInputPassword2">Password</label>
-													 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
-		                       <div class="help-block text-right"><a href="">¿Olvidaste tu contraseña?</a></div>
-												</div>
-												<div class="form-group">
-													 <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-												</div>
-												<div class="checkbox">
-													 <label>
-													 <input type="checkbox"> mantener sesión iniciada
-
-													 </label>
-												</div>
-										 </form>
+										
+										<ul class="user-menu">
+											<li><a href="article.html">Crear artículo <i class="glyphicon glyphicon-pencil"></i></a></li>
+											<li><a href="#">Opciones <i class="fa fa-cog"></i></a></li>
+											<li><a href="#">Ayuda<i class="fa fa-life-ring"></i></a></li>
+											<li><a href="index.html">Cerrar sesión <i class="fa fa-sign-out"></i></a></li>
+										</ul>
+										 
 									</div>
-									<div class="bottom text-center">
 
-										¿Eres nuevo aquí? <a href="./singup.html"><b>Registrarse</b></a>
-
-									</div>
 							 </div>
 						</li>
 					</ul>
@@ -375,7 +353,7 @@
 										<div class="comentario">
 											<div class="col-sm-2">
 												<div class="thumbnail">
-													<img class="img-responsive user-photo" src="../static/images/avatar.png">
+													<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
 												</div><!-- /thumbnail -->
 											</div><!-- /col-sm-1 -->
 
@@ -401,7 +379,7 @@
 										<div class="comentario">
 											<div class="col-sm-2">
 												<div class="thumbnail">
-													<img class="img-responsive user-photo" src="../static/images/avatar.png">
+													<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
 												</div><!-- /thumbnail -->
 											</div><!-- /col-sm-2 -->
 
@@ -428,7 +406,7 @@
 										<div class="comentario respuesta col-xs-11 col-sm-10 flotar_derecha">
 											<div class="col-sm-2">
 												<div class="thumbnail">
-													<img class="img-responsive user-photo" src="../static/images/avatar.png">
+													<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
 												</div><!-- /thumbnail -->
 											</div><!-- /col-sm-2 -->
 
@@ -449,7 +427,7 @@
 										<div class="comentario">
 											<div class="col-sm-2">
 												<div class="thumbnail">
-													<img class="img-responsive user-photo" src="../static/images/avatar.png">
+													<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
 												</div><!-- /thumbnail -->
 											</div><!-- /col-sm-2 -->
 
@@ -485,7 +463,31 @@
           </div>
           
           <!-- Modal2 -->
-
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" ><i class="fa fa-file-video-o icon-color" aria-hidden="true"></i> Video</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Enlace del video:</label>
+                    <div class="publicar_multimedia">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="adjuntar_multimedia btn btn-primary"   data-dismiss="modal">Adjuntar</button>
+              </div>
+            </div>
+          </div>
+          </div>
           <!--************************************************* Modal ***********************************************-->
           
 

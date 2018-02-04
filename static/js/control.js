@@ -24,17 +24,20 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 	
 
 	/*Animacion en el buscador de la pagina*/
-	$(".buscador_principal").focusin(function(){ 
-		$(this).animate({
-			width: "300px"
-		}, 1000, function() {});
-
-	});
-	$(".buscador_principal").focusout(function(){
-		$(this).animate({
-			width: "200px"
-		}, 500, function() {});
-	});
+	
+		$(".buscador_principal").focusin(function(){ 
+				$(this).animate({
+					width: "250px"
+				}, 1000, function() {});
+		});
+		$(".buscador_principal").focusout(function(){
+			
+				$(this).animate({
+					width: "200px"
+				}, 500, function() {});
+			
+		});
+	
 	
 	//Para controlar modal anidados - ya que boostrap no lo permite
 	$(document).on('show.bs.modal', '.modal', function (event) {
@@ -57,6 +60,7 @@ $(document).ready(function(){//Cuando cargan todos los elementos del DOM
 		}
 		return false;
 	});
+
 
 
 });
