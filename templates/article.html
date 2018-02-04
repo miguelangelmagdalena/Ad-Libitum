@@ -3,7 +3,8 @@
 <head>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/article_viewing.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/article_viewing_mobile.css" media="screen and (max-width: 768px)"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/article_viewing.css" media="screen and (min-width: 769px)"/>
     <link rel="stylesheet" href="../static/vendor/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../static/vendor/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../static/images/icon.ico" type="image/x-icon" />
@@ -58,14 +59,18 @@
 				<button class="simple_button"><i class="fa fa-bold" aria-hidden="true"></i></button>
 				<button class="simple_button"><i class="fa fa-italic" aria-hidden="true"></i></button>
 				<button class="simple_button"><i class="fa fa-underline" aria-hidden="true"></i></button>
-
+                <button class="simple_button"><i class="fa fa-text-height"></i></button>
 			</div>
 		</div>
 		<div id="right_box_text">
 			<div class="element_centrator" id="title_box">
 				<p>Titulo</p>
 				<input class="input_fixer" id="article_title" type="text" name="article_title" placeholder="Título del artículo">
-			</div>
+            </div>
+            <div class="meta_text" id="meta_info">
+                Autor: <span id="article_author">#</span> .
+                Fecha: <span id="date_post">#</span> .
+            </div>
 			<div class="element_centrator" id="body_box">
 				<textarea class="input_fixer" id="article_body" placeholder="Escribe tu artículo" ></textarea>
 				<div id="option_buttons">
