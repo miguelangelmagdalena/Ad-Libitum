@@ -276,6 +276,9 @@ hr {
     height: 66px;
     float: right;
 }
+.art_2_3{
+	font-size: 11px;
+}
 .art_2 img {
 	width: 30px;
 	float: left;
@@ -290,6 +293,13 @@ hr {
 }
 .art_2 .art_2_total{
 	font-size: 0.9rem;
+}
+.art_2_toggle1{
+
+}
+
+.art_2_toggle2{
+	display: none;
 }
 
 .articulo_barra_texto{
@@ -538,6 +548,10 @@ a.socialIcon:hover, .socialHoverClass {
     max-height: calc(100vh - 180px);
     overflow-y: auto;
 }
+.modal-open .modal {
+    overflow-y: hidden !important;
+}
+
 .modal {
 	padding-right: 0px !important;
 }
@@ -756,7 +770,8 @@ a.socialIcon:hover, .socialHoverClass {
 	position: relative;
     display: inline-block;
     border-radius: 0 100px 90px 0;
-
+    height: 66px;
+    float: right;
 }
 
 .tooltip_star_content{
@@ -796,7 +811,22 @@ a.socialIcon:hover, .socialHoverClass {
     border-color: buttonface;
 }
 
-
+.tooltip_star_icon{
+	float: left;
+    font-size: 30px;
+    color: gold;
+    text-shadow: 1px 1px goldenrod, 2px 2px #B57340, 0.1em 0.1em 0.2em rgba(0,0,0,.5);
+}
+.tooltip_star_icon2{
+	float: left;
+    margin-left: 15px;
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px crimson, 2px 2px darkred, 0.1em 0.1em 0.2em rgba(0,0,0,.5);
+}
+.tooltip_star_content label{
+	top: -5px
+} 
 /*Votacion con estrellas http://jsfiddle.net/leaverou/CGP87/?utm_source=website&utm_medium=embed&utm_campaign=CGP87*/
 .rating {
     float:left;

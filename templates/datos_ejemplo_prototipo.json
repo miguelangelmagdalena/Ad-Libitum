@@ -1,39 +1,164 @@
 mydata = [
    {
-    "id" : 1,
-    "fecha_creacion" :      "14/08/17 22:15",
+    "id" : 10,
     "titulo_articulo" : "Lorem ipsum dolor sit amet",
-    "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
+    "fecha_creacion" :      "14/08/17 22:15",
+    "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Jazz", "Indie", "Eléctronica", "Hip-Hop/Rap", "Folklore Venezolano", "Latin"],
     "multimedia_url" : "../static/images/probando (1).jpg",
     "cant_votos" : 6,
-    "cant_total" : 1200
-  },
-  {
-    "id" : 1,
-    "fecha_creacion" :      "14/08/17 22:15",
-    "titulo_articulo" : "Lorem ipsum dolor sit amet",
-    "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ue nulla, retium mauris.",
-    "multimedia_url" : "../static/images/probando (2).jpg",
-    "cant_votos" : 9,
-    "cant_total" : 1257
-  },
-  {
-    "id" : 1,
-    "fecha_creacion" :      "14/08/17 22:15",
-    "titulo_articulo" : "Lorem ipsum dolor sit amet",
+    "cant_total" : 1200,
     "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat, velit non vulputate ornare, augue metus scelerisque mi, vel hendrerit neque lacus sed sapien. Maecenas nec magna consequat, sagittis mauris a, sollicitudin sem. Vivamus id lorem vehicula elit malesuada pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
-    "multimedia_url" : "../static/images/probando (3).jpg",
-    "cant_votos" : 4.5,
-    "cant_total" : 124
+    "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
+    "comentarios" : [
+      {
+        "id" : 1,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 2,
+        "tipo": "respuesta",
+        "foto_perfil" : "../static/images/probando (2).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es una respuesta al comentario de arriba"
+      }
+    ]
   },
+
   {
-    "id" : 1,
+    "id" : 11,
+    "titulo_articulo" : "Lorem sit amet",
     "fecha_creacion" :      "14/08/17 22:15",
-    "titulo_articulo" : "Lorem ipsum dolor sit amet",
-    "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. rta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
-    "multimedia_url" : "../static/images/probando (31).jpg",
-    "cant_votos" : 7.8,
-    "cant_total" : 508
+    "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Jazz", "Indie", "Latin"],
+    "multimedia_url" : "../static/images/probando (2).jpg",
+    "cant_votos" : 6,
+    "cant_total" : 1200,
+    "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. agittida pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
+    "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
+    "comentarios" : [
+      {
+        "id" : 1,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (2).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 2,
+        "tipo": "respuesta",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es una respuesta al comentario de arriba"
+      },
+      {
+        "id" : 3,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (3).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 4,
+        "tipo": "respuesta",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es una respuesta al comentario de arriba"
+      }
+    ]
+  },
+
+  {
+    "id" : 12,
+    "titulo_articulo" : "Lorem sit amet",
+    "fecha_creacion" :      "14/08/17 22:15",
+    "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Latin"],
+    "multimedia_url" : "../static/images/probando (3).jpg",
+    "cant_votos" : 6,
+    "cant_total" : 1200,
+    "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. agittida pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
+    "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
+    "comentarios" : [
+      {
+        "id" : 1,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 3,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 4,
+        "tipo": "respuesta",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es una respuesta al comentario de arriba"
+      }
+    ]
+  },
+
+  {
+    "id" : 13,
+    "titulo_articulo" : "Lorem sit amet",
+    "fecha_creacion" :      "14/08/17 22:15",
+    "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Latin"],
+    "multimedia_url" : "../static/images/probando (3).jpg",
+    "cant_votos" : 6,
+    "cant_total" : 1200,
+    "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. agittida pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
+    "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
+    "comentarios" : [
+      {
+        "id" : 1,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 2,
+        "tipo": "respuesta",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es una respuesta al comentario de arriba"
+      },
+      {
+        "id" : 3,
+        "tipo": "principal",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es un comentario"
+      },
+      {
+        "id" : 4,
+        "tipo": "respuesta",
+        "foto_perfil" : "../static/images/probando (1).jpg",
+        "nombre_usuario" : "Miguel Angel",
+        "fecha_comentario": "15/08/17 13:15",
+        "texto" : "esto es una respuesta al comentario de arriba"
+      }
+    ]
   }
- 
+
+
+
 ];
