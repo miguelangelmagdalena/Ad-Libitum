@@ -1,6 +1,6 @@
 #left_tool_box {
     position: absolute;
-    height: 500px;
+    height: 85%;
     width: 30%;
     top: 70px;
     left: 3%;
@@ -12,7 +12,8 @@
 }
 
 #body_box {
-    width: 80%;
+    width: 82%;
+    height: 80%;
 }
 
 #title_box {
@@ -20,18 +21,23 @@
 }
 
 #article_body {
-    height: 38ch;
+    height: 90%;
 }
 
 #right_box_text {
     width: 60%;
     right: 3%;
     top: 70px;
-    height: 500px;
+    height: 85%;
     position: absolute;
     background: white;
     border-radius: 10px;
     box-shadow: 3px 3px 5px gray;
+}
+
+.meta_text {
+    color: grey;
+    padding-left: 2%;
 }
 
 .element_centrator {
