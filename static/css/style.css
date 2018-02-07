@@ -14,7 +14,8 @@ html, body {
 
 }
 body {
-	background-color: #e9ebee !important;
+	/*background-color: #e9ebee !important;*/
+	background-color: #3A4050 !important;
 	overflow-y: hidden;
 	padding-right: 0px !important;
 }
@@ -260,6 +261,10 @@ hr {
 
 
 
+#cp_widget_577e9ce7-6c6b-47c9-8bf1-254f79eadc24{
+	margin-bottom: 15px !important;
+}
+
 
 
 .art_1{
@@ -313,7 +318,9 @@ hr {
 }
 .articulo_multimedia{
 	float: left;
-	width: 30%;
+	/*width: 30%;*/
+	width: 28%;
+    margin-right: 10px;
 }
 
 .articulo_barra_opciones{

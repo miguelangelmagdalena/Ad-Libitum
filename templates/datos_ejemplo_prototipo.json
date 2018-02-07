@@ -35,8 +35,8 @@ mydata = [
     "fecha_creacion" :      "14/08/17 22:15",
     "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Jazz", "Indie", "Latin"],
     "multimedia_url" : "../static/images/probando (2).jpg",
-    "cant_votos" : 6,
-    "cant_total" : 1200,
+    "cant_votos" : 8,
+    "cant_total" : 200,
     "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. agittida pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
     "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
     "comentarios" : [
@@ -81,8 +81,8 @@ mydata = [
     "fecha_creacion" :      "14/08/17 22:15",
     "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Latin"],
     "multimedia_url" : "../static/images/probando (3).jpg",
-    "cant_votos" : 6,
-    "cant_total" : 1200,
+    "cant_votos" : 7,
+    "cant_total" : 157,
     "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. agittida pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
     "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
     "comentarios" : [
@@ -119,8 +119,8 @@ mydata = [
     "fecha_creacion" :      "14/08/17 22:15",
     "categorias": ["*Popular*", "Pop", "Reggaeton", "Clásica", "Latin"],
     "multimedia_url" : "../static/images/probando (3).jpg",
-    "cant_votos" : 6,
-    "cant_total" : 1200,
+    "cant_votos" : 3,
+    "cant_total" : 458,
     "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. agittida pulvinar. Praesent porta interdum elementum. Donec pharetra volutpat tempus. Vivamus sit amet purus eu nunc luctus pulvinar non ut erat. Morbi egestas dolor quis neque facilisis dignissim. Donec ullamcorper bibendum urna. Quisque auctor scelerisque aliquam. Nulla eu arcu nec tellus accumsan dictum. Donec quis egestas lorem, a fringilla elit. Nulla vestibulum arcu gravida leo suscipit ornare. Aliquam neque nulla, fermentum a sapien eu, imperdiet mollis mi. Quisque faucibus ex eget ipsum laoreet, ut elementum augue suscipit. Proin commodo lectus vitae libero maximus tempus. Pellentesque vulputate, lorem eu condimentum dapibus, urna nunc semper elit, ac luctus justo lectus sit amet ex. Aenean non eros maximus, ornare odio vel, pretium mauris.",
     "texto_completo" : "aasfsdfsdfsdf sdfsd sdfsdf",
     "comentarios" : [
