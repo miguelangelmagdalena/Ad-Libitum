@@ -164,11 +164,48 @@ function more_elements_callback(index,increment,max_value){ //Funcion para agreg
 			publicacion +=										"<h2 class='publicacion_nombre2 titulo'>"+mydata[i].titulo_articulo+"</h2>";
 			publicacion +=									"</a>";
 			publicacion +=									"<div class='publicacion_barra_opciones2'>";
-			publicacion +=										"<div class='articulo_fecha flotar_izquierda'>"+mydata[i].fecha_creacion+"</div>";										
+			publicacion +=										"<div class='articulo_fecha flotar_izquierda'>"+mydata[i].fecha_creacion+" </div> ";										
 			
 			var categorias_lenght = mydata[i].categorias.length;
 			for(j = 0; j<categorias_lenght; j++){
-				var categorias = 									"<a href='#' class='label label-primary'>"+mydata[i].categorias[j]+"</a> ";
+
+				var text;
+				switch(mydata[i].categorias[j]) {
+				    case "*Popular*":
+				        text = "primary";
+				        break;
+				    case "Pop":
+				        text = "primary";
+				        break;
+				    case "Reggaeton":
+				        text = "default";
+				        break;
+				    case "Clásica":
+				        text = "success";
+				        break;
+					case "Jazz":
+				        text = "danger";
+				        break;
+				    case "Indie":
+				        text = "warning";
+				        break;
+				    case "Eléctronica":
+				        text = "info";
+				        break;
+				    case "Hip-Hop/Rap":
+				        text = "danger";
+				        break;
+				    case "Folklore Venezolano":
+				        text = "warning";
+				        break;
+				    case "Latin":
+				        text = "info";
+				        break;				     
+				    default:
+				        text = "primary";
+				}
+
+				var categorias = 									"<a href='#' class='label label-"+text+"'>"+mydata[i].categorias[j]+"</a> ";
 				publicacion += categorias;
 			}
 			publicacion +=									"</div>	";
@@ -233,7 +270,44 @@ function more_elements_callback(index,increment,max_value){ //Funcion para agreg
 			publicacion +=											"<div class='articulo_fecha flotar_izquierda'>"+mydata[i].fecha_creacion+"</div>";
 
 			for(j = 0; j<categorias_lenght; j++){
-				var categorias = 									"<a href='#' class='label label-primary'>"+mydata[i].categorias[j]+"</a> ";
+
+				var text;
+				switch(mydata[i].categorias[j]) {
+				    case "*Popular*":
+				        text = "primary";
+				        break;
+				    case "Pop":
+				        text = "primary";
+				        break;
+				    case "Reggaeton":
+				        text = "default";
+				        break;
+				    case "Clásica":
+				        text = "success";
+				        break;
+					case "Jazz":
+				        text = "danger";
+				        break;
+				    case "Indie":
+				        text = "warning";
+				        break;
+				    case "Eléctronica":
+				        text = "info";
+				        break;
+				    case "Hip-Hop/Rap":
+				        text = "danger";
+				        break;
+				    case "Folklore Venezolano":
+				        text = "warning";
+				        break;
+				    case "Latin":
+				        text = "info";
+				        break;				     
+				    default:
+				        text = "primary";
+				}
+
+				var categorias = 									"<a href='#' class='label label-"+text+"'>"+mydata[i].categorias[j]+"</a> ";
 				publicacion += categorias;
 			}
 
