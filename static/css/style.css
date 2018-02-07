@@ -18,6 +18,8 @@ body {
 	background-color: #3A4050 !important;
 	overflow-y: hidden;
 	padding-right: 0px !important;
+
+
 }
 textarea {
     resize: none;
@@ -78,7 +80,8 @@ hr {
 	width: 22%;
 }
 .sidenav {
-  	background-color: white;
+  	/*background-color: white;*/
+  	background-color: #d7d7eb;
   	height: 100%;
  	position: relative;
 	margin-left: 24.875px;
@@ -431,7 +434,8 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .social-network a {
- background-color: #D3D3D3;   
+ /*background-color: #D3D3D3;  */ 
+ background-color: #1A1A30;
 }
 
 
@@ -587,7 +591,8 @@ a.socialIcon:hover, .socialHoverClass {
 .publicacion{
 	margin-bottom: 2.5%;
 	padding: 6px;
-	background-color: white;
+	/*background-color: white;*/
+	background-color: #d7d7eb;
 	overflow: hidden;
 }
 .publicacion2{
